@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: $main-font;
+  font-weight: $main-font-weight;
+  scroll-behavior: smooth;
+  font-size: $main-font-size;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+img {
+}
+
+input,
+button,
+select,
+option,
+textarea {
+  outline: none;
+}
+
+.container {
+  width: 62rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
