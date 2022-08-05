@@ -11,6 +11,8 @@ body, html {
   font-weight: $main-font-weight;
   scroll-behavior: smooth;
   font-size: $main-font-size;
+  background-color: $white;
+  color: $text-color;
 }
 
 html,
@@ -25,6 +27,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 button {

@@ -1,0 +1,59 @@
+.header {
+
+  &__container {
+    min-height: 4.5rem;
+    width: 67.75rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    line-height: 153%;
+    font-size: .7rem;
+  }
+
+  &__logo {
+    flex: 1 1 5.7%;
+  }
+
+  &__nav {
+  }
+
+  &__buttons {
+    display: flex;
+    flex: 0 1 21.2%;
+    margin-left: 5.2%;
+  }
+
+  &__demo {
+    color: $white;
+    display: flex;
+    white-space: nowrap;
+    padding: .5rem .75rem;
+    border-radius: .3rem;
+    align-items: center;
+    justify-content: center;
+    background-color: $text-color-lite;
+    margin-right: 10.3%;
+  }
+
+  &__demo:hover {
+    background-color: $text-color;
+  }
+
+  &__login {
+    font-size: .65rem;
+    margin-right: 9.2%;
+  }
+
+  &__language {
+    text-transform: uppercase;
+    font-size: .65rem;
+  }
+}
+
+.icon-arrow-down:after {
+  font-size: .5rem;
+  padding-left: .4rem;
+}
+
+.container {
+}

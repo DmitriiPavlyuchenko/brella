@@ -1,0 +1,21 @@
+.nav-menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: .4rem 0;
+  }
+
+  &__link {
+    transition: padding-bottom .3s, transform .5s;
+  }
+
+  &__link:hover {
+    padding-bottom: .4rem;
+    border-bottom: 3px solid $text-color;
+  }
+}

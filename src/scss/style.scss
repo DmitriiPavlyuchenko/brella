@@ -4,3 +4,9 @@
 "./utils/default-settings",
 "./utils/style-class",
 "./utils/mixins";
+
+@import "../img/icons-font/style.css";
+
+@import "./components/header",
+"./components/logo",
+"./components/nav-menu";
