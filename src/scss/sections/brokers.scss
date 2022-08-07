@@ -1,0 +1,25 @@
+.brokers {
+  padding-top: 6rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__text {
+    max-width: 27.55rem;
+    flex: 0 1 50%;
+  }
+
+  &__image-container {
+    flex: 0 1 50%;
+    max-width: 50%;
+    content: url("/dist/assets/img/people.svg");
+  }
+
+  &__image:before {
+
+
+  }
+}
