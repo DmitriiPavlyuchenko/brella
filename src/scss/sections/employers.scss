@@ -1,0 +1,63 @@
+.employers {
+
+  &__container {
+    display: flex;
+    width: 100vw;
+    max-width: 62rem;
+  }
+
+  &__left-block {
+    font-family: 'Roboto', sans-serif;
+    background: #E3EEED;
+    font-size: 1.6rem;
+    line-height: 131.25%;
+    padding: 6rem 0;
+    flex: 1 1 50%;
+  }
+
+  &__header {
+
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-top: 1.45rem;
+    font-weight: 700;
+  }
+
+  &__list {
+    padding-top: .9rem;
+    display: flex;
+    flex-direction: column;
+    color: $text-color-lite;
+  }
+
+  &__item {
+    gap: .9rem;
+  }
+
+  &__right-block {
+    padding: 6rem 0;
+    flex: 0 1 50%;
+    background-color: $text-color;
+    color: $white;
+    gap: 1.7rem;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__text {
+    max-width: 25.5rem;
+    line-height: 170%;
+    padding-right: .5rem;
+    letter-spacing: 0.02px;
+  }
+}
+
+.icon-arrow-left:after {
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}

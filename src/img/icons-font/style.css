@@ -33,7 +33,7 @@
   content: "\e901";
 }
 
-.icon-arrow-left:before {
+.icon-arrow-left:after {
   content: "\e907";
 }
 
