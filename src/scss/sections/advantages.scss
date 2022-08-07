@@ -1,7 +1,23 @@
 .advantages {
   &__container {
+    display: flex;
+    align-items: center;
+    min-height: 8.55rem;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: .8rem;
+    margin-top: -4.7rem;
+    box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
+    border-radius: .3rem;
+    background-color: $white;
+    flex-wrap: wrap;
   }
 
   &__card {
+    display: flex;
+    gap: .5rem;
+    max-width: 17.8rem;
+    min-width: 5rem;
+    padding: 0 .5rem ;
   }
 }

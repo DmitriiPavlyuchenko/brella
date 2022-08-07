@@ -1,13 +1,22 @@
 .advantages-card {
+
   &__img {
+    align-self: center;
+    flex: 1 0 20%;
   }
 
   &__text {
   }
 
   &__title {
+    font-size: .8rem;
+    line-height: 150%;
+    font-weight: 400;
   }
 
   &__description {
+    padding-top: .35rem;
+    font-size: .7rem;
+    line-height: 142%;
   }
 }
