@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const copyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const fs = require('fs')
 
 const PATHS = {
@@ -27,7 +26,9 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}/js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: "/"
+    publicPath: "/",
+    assetModuleFilename: "assets/[name][ext]",
+    clean: true
   },
   optimization: {
     splitChunks: {
@@ -49,18 +50,17 @@ module.exports = {
     },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: "file-loader",
-        options: {
-          name: `[name].[ext]`
-        }
+        type: "asset/resource",
+        // options: {
+        //   name: `[name].[ext]`
+        // }
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)$/,
-        loader: "file-loader",
         type: 'asset/resource',
-        options: {
-          name: `[name].[ext]`
-        }
+        // options: {
+        //   name: `[name].[ext]`
+        // }
       },
       {
         test: /\.css$/,
@@ -111,6 +111,5 @@ module.exports = {
               filename: `./${page}`
             })
     ),
-    new CleanWebpackPlugin()
   ]
 }
