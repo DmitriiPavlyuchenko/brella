@@ -1,10 +1,22 @@
 .graph {
+
   &__price {
+
   }
 
   &__body {
+    min-width: 3.9rem;
+    height: 7.5rem;
+    background-color: $text-color-lite;
   }
 
   &__title {
+    display: block;
+    font-size: .65rem;
+    margin-top: 1rem;
   }
+}
+
+.graph:nth-child(2) > div {
+    height: 15rem;
 }
