@@ -1,0 +1,41 @@
+.slider {
+
+  &__wrapper {
+    position: relative;
+    align-items: center;
+    display: flex;
+    padding: 0 4rem;
+    justify-content: center;
+  }
+
+  &__company-logo {
+
+  }
+
+  &__company-logo:not(:last-child) {
+    margin-right: 4rem;
+  }
+
+  &__pagination {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    top: 50%;
+    bottom: 50%;
+  }
+
+  &__back {
+    left: 0;
+  }
+
+  &__back:first-child {
+    transform: rotate(200grad);
+
+  }
+
+  &__next {
+    right: 0;
+  }
+}
