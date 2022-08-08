@@ -1,0 +1,12 @@
+.information {
+  background-image: url("/dist/assets/img/girl-bg.jpg");
+  background-size: cover;
+
+  &__container {
+    padding: 6.3rem 1rem 5.7rem;
+  }
+
+  &__text {
+    max-width: 24.5rem;
+  }
+}
