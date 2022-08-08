@@ -1,0 +1,170 @@
+.footer {
+  padding: 5rem 0 2.5rem;
+  background-color: $text-color;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+
+  &__top {
+    display: flex;
+    border-bottom: 1px solid $white;
+    padding-bottom: 3.55rem;
+  }
+
+  &__logo-wrapper {
+    margin-right: 5.25rem;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    gap: .8rem;
+  }
+
+  &__menu-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 9.35rem;
+    gap: .75rem;
+    width: 100%;
+  }
+
+  &__menu-title {
+    @include text-mini(.65rem, 700, uppercase)
+  }
+
+  &__menu-link {
+    display: inline-block;
+    font-size: .8rem;
+    line-height: 168%;
+    transition: padding-bottom .3s, transform .5s;
+  }
+
+  &__menu-link:hover {
+    color: $grey;
+  }
+
+  &__aside {
+    max-width: 17.75rem;
+  }
+
+  &__aside-title {
+    @include text-mini(.65rem, 400, uppercase)
+  }
+
+  &__aside-description {
+    display: block;
+    letter-spacing: 0.02px;
+    font-size: .7rem;
+    line-height: 171%;
+    padding: .95rem 0 .8rem;
+  }
+
+  &__form {
+    width: 100%;
+    border: 1px solid $white;
+    display: flex;
+    background-color: inherit;
+  }
+
+  &__email {
+    background-color: inherit;
+    min-height: 2.6rem;
+    flex-grow: 1;
+    padding-left: 1rem;
+    align-self: center;
+  }
+
+  &__email::placeholder {
+    @include text-mini(.7rem, 400, none);
+    color: $white;
+  }
+
+  &__submit {
+    flex: 0 0 15%;
+    background-color: $white;
+    min-height: 100%;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-arrow-left:after {
+    color: $text-color;
+    padding: 0;
+  }
+
+  &__socials {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__socials > a:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+
+  &__socials > a {
+    font-size: 1.3rem;
+  }
+
+  &__linkedin {
+  }
+
+  &__twitter {
+  }
+
+  &__youtube {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("/dist/assets/img/icons/youtube.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__body {
+    letter-spacing: 0.02px;
+    font-size: .7rem;
+    line-height: 171%;
+    padding: 3.5rem 0 4.5rem;
+  }
+
+  &__text {
+    display: block;
+  }
+
+  &__text:nth-child(2) {
+    padding: 1rem 0 1.2rem;
+  }
+
+  &__bottom {
+    display: flex;
+    @include text-mini(.7rem, 400, none);
+    justify-content: space-between;
+    padding-top: 2.5rem;
+  }
+
+  &__rights {
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+    color: $white;
+  }
+
+  &__privacy {
+  }
+
+  &__separator {
+  }
+
+}
