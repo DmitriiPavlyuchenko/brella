@@ -42,4 +42,26 @@
     font-size: .9rem;
     letter-spacing: 0.02px;
   }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    text-align: center;
+    letter-spacing: 0.02px;
+    font-weight: 700;
+    font-size: .65rem;
+    line-height: 161%;
+    color: $white;
+    background-color: $text-color-lite;
+    border: 1px solid #43806C;
+    border-radius: 6px;
+    width: 6.35rem;
+    height: 2.35rem;
+  }
+
+  &__link:hover {
+    background-color: $text-color;
+  }
 }
