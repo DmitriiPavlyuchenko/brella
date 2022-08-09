@@ -1,5 +1,6 @@
 .employers {
-
+  position: relative;
+  
   &__container {
     display: flex;
     width: 100vw;
@@ -8,13 +9,23 @@
 
   &__left-block {
     font-family: 'Roboto', sans-serif;
-    background: #E3EEED;
     font-size: 1.6rem;
     line-height: 131.25%;
     padding: 6rem 0;
     flex: 1 1 50%;
   }
 
+  &__left-block:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $aqua;
+    z-index: -1;
+  }
+  
   &__header {
 
   }
@@ -40,13 +51,23 @@
   &__right-block {
     padding: 6rem 0;
     flex: 0 1 50%;
-    background-color: $text-color;
     color: $white;
     gap: 1.7rem;
     justify-content: flex-end;
     flex-direction: column;
     display: flex;
     align-items: flex-end;
+  }
+
+  &__right-block:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    background-color: $text-color;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   &__text {

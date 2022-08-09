@@ -2,7 +2,7 @@
 
   &__container {
     min-height: 4.5rem;
-    width: 67.75rem;
+    max-width: 67.75rem;
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -12,14 +12,16 @@
 
   &__logo {
     flex: 1 1 5.7%;
+    margin-right: 1.5rem;
   }
 
   &__nav {
+    flex-shrink: 1;
   }
 
   &__buttons {
     display: flex;
-    flex: 0 1 21.2%;
+    flex: 0 0 21.2%;
     margin-left: 5.2%;
   }
 

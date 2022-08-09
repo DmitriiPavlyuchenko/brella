@@ -11,6 +11,10 @@
     padding-left: 5.75rem;
   }
 
+  &__image-wrapper > img {
+    display: block;
+  }
+
   &__text {
     flex: 0 0 50%;
     padding-left: 1.5rem;
