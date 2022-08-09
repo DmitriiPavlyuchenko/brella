@@ -27,16 +27,16 @@
     gap: .8rem;
   }
 
-  &__menu-column {
+  &__menu-title {
+    @include text-mini(.65rem, 700, uppercase)
+  }
+
+  &__menu-list {
     display: flex;
     flex-direction: column;
     max-width: 9.35rem;
     gap: .75rem;
     width: 100%;
-  }
-
-  &__menu-title {
-    @include text-mini(.65rem, 700, uppercase)
   }
 
   &__menu-link {
@@ -79,6 +79,7 @@
     flex-grow: 1;
     padding-left: 1rem;
     align-self: center;
+    border: none;
   }
 
   &__email::placeholder {
@@ -111,24 +112,10 @@
     margin-right: 1.5rem;
   }
 
-  &__socials > a {
-    font-size: 1.3rem;
+  &__socials > a > img:hover {
+    @include increase();
   }
 
-  &__linkedin {
-  }
-
-  &__twitter {
-  }
-
-  &__youtube {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image: url("/dist/assets/img/icons/youtube.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 
   &__body {
     letter-spacing: 0.02px;
@@ -161,10 +148,15 @@
     color: $white;
   }
 
-  &__privacy {
+  &__privacy:hover {
+    color: $grey;
   }
 
   &__separator {
+    height: 100%;
   }
 
+  &__service:hover {
+    color: $grey;
+  }
 }

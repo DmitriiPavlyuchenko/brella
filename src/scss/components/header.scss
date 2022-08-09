@@ -8,11 +8,12 @@
     font-weight: 700;
     line-height: 153%;
     font-size: .7rem;
+    padding-bottom: .4rem;
   }
 
   &__logo {
-    flex: 1 1 5.7%;
-    margin-right: 1.5rem;
+    flex: 1 1 4%;
+    padding-top: .6rem;
   }
 
   &__nav {
@@ -34,7 +35,7 @@
     align-items: center;
     justify-content: center;
     background-color: $text-color-lite;
-    margin-right: 10.3%;
+    margin-right: 1.45rem;
   }
 
   &__demo:hover {
@@ -43,7 +44,15 @@
 
   &__login {
     font-size: .65rem;
-    margin-right: 9.2%;
+    margin-right: 2.2rem;
+  }
+
+  &__login:hover {
+    @include increase();
+  }
+
+  &__language:hover {
+    @include increase();
   }
 
   &__language {
@@ -53,9 +62,6 @@
 }
 
 .icon-arrow-down:after {
-  font-size: .5rem;
-  padding-left: .4rem;
-}
-
-.container {
+  font-size: .4rem;
+  padding-left: .2rem;
 }

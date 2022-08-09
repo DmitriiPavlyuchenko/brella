@@ -9,7 +9,10 @@
   }
 
   &__company-logo {
+  }
 
+  &__company-logo:hover {
+    @include increase();
   }
 
   &__company-logo:not(:last-child) {
@@ -32,7 +35,6 @@
 
   &__back:first-child {
     transform: rotate(200grad);
-
   }
 
   &__next {

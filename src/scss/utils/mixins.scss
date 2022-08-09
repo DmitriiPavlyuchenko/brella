@@ -6,3 +6,8 @@
   letter-spacing: 0.02px;
   text-transform: $text-transform;
 }
+
+@mixin increase() {
+  transition: .1s, transform .3s;
+  transform: scaleX(1.1) scaleY(1.1);
+}

@@ -54,25 +54,27 @@
   </section>
   <section class="advantages">
     <div class="advantages__container container">
-      <div class="advantages__card advantages-card">
-        <img src="/assets/img/icons/umbrella.svg" width="41" height="45" alt="Umbrella" class="advantages-card__img">
-        <div class="advantages-card__text">
-          <h3 class="advantages-card__title">More coverage</h3>
-          <span class="advantages-card__description">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</span>
+      <div class="advantages__wrapper">
+        <div class="advantages__card advantages-card">
+          <img src="/assets/img/icons/umbrella.svg" width="41" height="45" alt="Umbrella" class="advantages-card__img">
+          <div class="advantages-card__text">
+            <h3 class="advantages-card__title">More coverage</h3>
+            <span class="advantages-card__description">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</span>
+          </div>
         </div>
-      </div>
-      <div class="advantages__card advantages-card">
-        <img src="/assets/img/icons/check.svg" width="46" height="45" alt="Check" class="advantages-card__img">
-        <div class="advantages-card__text">
-          <h3 class="advantages-card__title">Less hassle</h3>
-          <span class="advantages-card__description">One easy-to-manage plan with paperless install and online admin tools.</span>
+        <div class="advantages__card advantages-card">
+          <img src="/assets/img/icons/check.svg" width="46" height="45" alt="Check" class="advantages-card__img">
+          <div class="advantages-card__text">
+            <h3 class="advantages-card__title">Less hassle</h3>
+            <span class="advantages-card__description">One easy-to-manage plan with paperless install and online admin tools.</span>
+          </div>
         </div>
-      </div>
-      <div class="advantages__card advantages-card">
-        <img src="/assets/img/icons/wallet.svg" width="58" height="45" alt="Wallet" class="advantages-card__img">
-        <div class="advantages-card__text">
-          <h3 class="advantages-card__title">Faster benefits</h3>
-          <span class="advantages-card__description">Brella pays claims in hours–not weeks so your people can rest easy.</span>
+        <div class="advantages__card advantages-card">
+          <img src="/assets/img/icons/wallet.svg" width="58" height="45" alt="Wallet" class="advantages-card__img">
+          <div class="advantages-card__text">
+            <h3 class="advantages-card__title">Faster benefits</h3>
+            <span class="advantages-card__description">Brella pays claims in hours–not weeks so your people can rest easy.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -86,7 +88,7 @@
           ensure that health hardships don't become financial burdens.</p>
         <div class="text__plan-wrapper">
           <a href="#" class="text__plan">See our plan</a>
-          <hr>
+          <hr class="about-us__separator">
         </div>
       </div>
       <div class="about-us__diagram">
@@ -180,7 +182,7 @@
           file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
         <div class="text__plan-wrapper">
           <a href="#" class="text__plan">Play Video</a>
-          <hr>
+          <hr class="members__separator">
         </div>
       </div>
     </div>
@@ -194,7 +196,7 @@
           platforms or we’ll plug into yours.</p>
         <div class="text__plan-wrapper">
           <a href="#" class="text__plan">Learn more</a>
-          <hr>
+          <hr class="information__separator">
         </div>
       </div>
     </div>
@@ -271,20 +273,28 @@
         <a href="index.html" class="footer__logo icon-logo"></a>
       </div>
       <div class="footer__menu">
-        <div class="footer__menu-column">
-          <span class="footer__menu-title">Join Brella</span>
-          <a href="#plan" class="footer__menu-link">Our Plan</a>
-          <a href="#employers" class="footer__menu-link">Employers</a>
-          <a href="#brokers" class="footer__menu-link">Brokers</a>
-          <a href="#members" class="footer__menu-link">Members</a>
-        </div>
-        <div class="footer__menu-column">
-          <span class="footer__menu-title">Company</span>
-          <a href="#" class="footer__menu-link">About</a>
-          <a href="#" class="footer__menu-link">Blog</a>
-          <a href="#" class="footer__menu-link">Careers</a>
-          <a href="#contact" class="footer__menu-link">Contact</a>
-        </div>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-title">Join Brella</li>
+          <li class="footer__menu-item"><a href="#plan" class="footer__menu-link">Our Plan</a>
+          </li>
+          <li class="footer__menu-item"><a href="#employers" class="footer__menu-link">Employers</a>
+          </li>
+          <li class="footer__menu-item"><a href="#brokers" class="footer__menu-link">Brokers</a>
+          </li>
+          <li class="footer__menu-item"><a href="#members" class="footer__menu-link">Members</a>
+          </li>
+        </ul>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-title">Company</li>
+          <li class="footer__menu-item"><a href="#" class="footer__menu-link">About</a>
+          </li>
+          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Blog</a>
+          </li>
+          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Careers</a>
+          </li>
+          <li class="footer__menu-item"><a href="#contact" class="footer__menu-link">Contact</a>
+          </li>
+        </ul>
       </div>
       <div class="footer__aside">
         <span class="footer__aside-title">Get the latest</span>
@@ -295,9 +305,15 @@
           </button>
         </form>
         <div class="footer__socials">
-          <a href="#" class="footer__linkedin icon-linkedin"></a>
-          <a href="#" class="footer__twitter icon-twitter"></a>
-          <a href="#" class="footer__youtube"></a>
+          <a href="#" class="footer__linkedin">
+            <img src="/assets/img/icons/linkedin.svg" width="26" height="26" alt="linkedin">
+          </a>
+          <a href="#" class="footer__twitter">
+            <img src="/assets/img/icons/twitter.svg" width="26" height="22" alt="twitter">
+          </a>
+          <a href="#" class="footer__youtube">
+            <img src="/assets/img/icons/youtube.svg" width="26" height="20" alt="youtube">
+          </a>
         </div>
       </div>
     </div>
