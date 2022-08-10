@@ -45,6 +45,39 @@
   &__text > span:nth-child(2) {
     padding-top: 2.3rem;
   }
+}
 
+@media (max-width: $smDesktopWidth) {
+  .contact {
 
+    &__text {
+      padding: 4rem 0 4rem 3rem;
+    }
+  }
+}
+
+@media (max-width: $tableWidth) {
+  .contact {
+
+    &__text {
+      padding: 3rem 0 3rem 2rem;
+    }
+
+    &__text > span:nth-child(2)  {
+      padding-top: 1rem;
+    }
+
+    &__text > a {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .contact {
+
+    &__text {
+      padding: 2rem 0 2rem 1rem;
+    }
+  }
 }

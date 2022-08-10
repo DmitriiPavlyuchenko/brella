@@ -86,3 +86,13 @@
     }
   }
 }
+
+@media (max-width: $smTableWidth) {
+  .text {
+
+    &__link {
+      width: 5rem;
+      height: 2rem;
+    }
+  }
+}
