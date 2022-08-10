@@ -5,17 +5,8 @@
   padding: 8.05rem 0 14.05rem;
   font-weight: 700;
 
-  &__container {
-  }
-
   &__wrapper {
     max-width: 27rem;
-  }
-
-  &__text {
-  }
-
-  &__title {
   }
 
   &__description {
@@ -61,5 +52,62 @@
 
   &__link:hover {
     background-color: $text-color;
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .banner {
+    padding: 5rem 0 10rem;
+    background-position-x: 70%;
+    position: relative;
+    z-index: 1;
+
+    &__frame {
+      min-height: 2.5rem;
+      max-width: 15rem;
+      font-size: .6rem;
+    }
+
+    &__description {
+      font-size: .65rem;
+    }
+  }
+
+  .frame {
+    &__text {
+      font-size: .65rem;
+    }
+
+    &__link {
+      font-size: .65rem;
+    }
+  }
+
+  .banner:before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+    height: 100%;
+    opacity: .4;
+  }
+}
+
+@media (max-width: $tableWidth) {
+  .banner {
+    padding: 4rem 0 8.5rem;
+
+    &__description {
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .banner {
+    padding: 3.5rem 0 7rem;
   }
 }
