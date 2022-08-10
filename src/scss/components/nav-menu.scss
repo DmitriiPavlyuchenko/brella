@@ -19,3 +19,19 @@
     border-bottom: 3px solid $text-color;
   }
 }
+
+@media (max-width: $desktopWidth) {
+  .nav-menu {
+    &__list {
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .nav-menu {
+    &__list {
+      display: none;
+    }
+  }
+}

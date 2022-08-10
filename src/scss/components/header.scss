@@ -13,17 +13,20 @@
 
   &__logo {
     flex: 1 1 4%;
+    order: 2;
     padding-top: .6rem;
   }
 
   &__nav {
     flex-shrink: 1;
+    order: 2;
   }
 
   &__buttons {
     display: flex;
     flex: 0 0 21.2%;
     margin-left: 5.2%;
+    order: 3;
   }
 
   &__demo {
@@ -59,9 +62,60 @@
     text-transform: uppercase;
     font-size: .65rem;
   }
+
+  &__burger {
+    min-width: 1.5rem;
+    height: 1rem;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    order: 1;
+    margin-right: 1.5rem;
+  }
+
+  &__burger-item {
+    display: block;
+    border: .05rem solid $black;
+    width: 100%;
+  }
 }
 
 .icon-arrow-down:after {
   font-size: .4rem;
   padding-left: .2rem;
+}
+
+@media (max-width: $smDesktopWidth) {
+  .header {
+
+    &__container {
+      min-height: 3rem;
+      padding-bottom: 0;
+    }
+
+    &__logo {
+      padding-top: 0;
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: $tableWidth) {
+  .header {
+
+    &__container {
+      min-height: 2.5rem;
+    }
+
+    &__demo {
+      display: none;
+    }
+
+    &__login {
+      margin-right: 1rem;
+    }
+  }
 }
