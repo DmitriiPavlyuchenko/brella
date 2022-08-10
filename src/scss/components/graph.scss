@@ -20,3 +20,23 @@
 .graph:nth-child(2) > div {
     height: 15rem;
 }
+
+@media (max-width: $tableWidth) {
+  .graph {
+
+    &__body {
+      height: 5rem;
+      width: 3rem;
+      min-width: auto;
+    }
+
+    &__title {
+      white-space: nowrap;
+      margin-top: .5rem;
+    }
+  }
+
+  .graph:nth-child(2) > div {
+    height: 10rem;
+  }
+}

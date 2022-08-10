@@ -64,3 +64,25 @@
     background-color: $text-color;
   }
 }
+
+@media (max-width: $smDesktopWidth) {
+  .text {
+
+    &__header {
+      font-size: .6rem;
+    }
+
+    &__description {
+      font-size: .7rem;
+      padding-top: 1rem;
+    }
+
+    &__plan-wrapper {
+      padding-top: 1rem;
+    }
+
+    &__plan {
+      font-size: .7rem;
+    }
+  }
+}

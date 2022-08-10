@@ -75,3 +75,55 @@
     bottom: .2rem;
   }
 }
+
+@media (max-width: $smDesktopWidth) {
+  .about-us {
+    padding: 4rem 0 5rem;
+
+    &__container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__percents {
+      font-size: 2.5rem;
+    }
+
+    &__diagram-text {
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: $tableWidth) {
+  .about-us {
+    padding: 3rem 0 3.5rem;
+
+    &__container {
+      gap: 1rem;
+    }
+
+    &__graphs {
+      gap: 1rem;
+      width: 50%;
+    }
+
+    &__diagram-text {
+      padding-top: .5rem;
+    }
+
+    &__diagram-wrapper {
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .about-us {
+    padding: 2rem 0 2rem;
+  }
+
+  &__diagram-wrapper {
+    gap: 1rem;
+  }
+}
