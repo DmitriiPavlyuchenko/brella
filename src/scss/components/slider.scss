@@ -6,6 +6,7 @@
     display: flex;
     padding: 0 4rem;
     justify-content: center;
+    gap: 4rem;
   }
 
   &__company-logo {
@@ -13,10 +14,6 @@
 
   &__company-logo:hover {
     @include increase();
-  }
-
-  &__company-logo:not(:last-child) {
-    margin-right: 4rem;
   }
 
   &__pagination {
@@ -39,5 +36,28 @@
 
   &__next {
     right: 0;
+  }
+}
+
+@media (max-width: $desktopWidth) {
+  .slider {
+
+    &__wrapper {
+      gap: 2rem;
+      justify-content: space-evenly;
+    }
+
+    &__company-logo:nth-child(2n) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $smTableWidth) {
+  .slider {
+
+    &__company-logo:not(:first-child) {
+      display: none;
+    }
   }
 }

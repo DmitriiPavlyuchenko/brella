@@ -20,3 +20,35 @@
   margin: 0 auto;
   height: .05rem;
 }
+
+@media (max-width: $smDesktopWidth) {
+  .about {
+    padding-top: 4rem;
+
+    &__slider {
+      padding: 3.5rem 0 3.5rem;
+      gap: 3rem;
+    }
+  }
+}
+
+@media (max-width: $tableWidth) {
+  .about {
+    padding-top: 3rem;
+
+
+    &__slider {
+      padding: 2.5rem 0 2.5rem;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .about {
+    padding-top: 2rem;
+
+    &__slider {
+      padding: 1.5rem 0 1.5rem;
+    }
+  }
+}
