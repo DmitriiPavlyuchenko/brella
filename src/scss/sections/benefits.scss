@@ -27,3 +27,41 @@
     font-size: .65rem;
   }
 }
+
+@media (max-width: $tableWidth) {
+  .benefits {
+
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    &__card {
+      max-width: 11rem;
+    }
+  }
+}
+
+@media (max-width: $smTableWidth) {
+  .benefits {
+
+    &__container {
+      gap: 1rem;
+    }
+
+    &__card {
+      max-width: 13rem;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .benefits {
+    padding-top: 2rem;
+
+    &__container {
+      gap: .5rem;
+    }
+  }
+}
