@@ -1,7 +1,9 @@
 .blog-card {
+
   &__img {
     max-width: 100%;
     object-fit: contain;
+    display: block;
   }
 
   &__img:hover {
@@ -22,5 +24,28 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 130%;
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .blog-card {
+
+    &__title {
+      padding-top: .5rem;
+      font-size: .5rem;
+    }
+
+    &__description {
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .blog-card {
+
+    &__description {
+      padding-top: .5rem;
+    }
   }
 }

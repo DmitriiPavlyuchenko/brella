@@ -17,4 +17,30 @@
   }
 }
 
+@media (max-width: $smDesktopWidth) {
+  .blog {
+    padding-top: 4rem;
 
+    &__wrapper {
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: $tableWidth) {
+  .blog {
+    padding-top: 3rem;
+
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .blog {
+    padding-top: 2rem;
+  }
+}
