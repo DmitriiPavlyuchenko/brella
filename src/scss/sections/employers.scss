@@ -6,6 +6,13 @@
     max-width: 62rem;
   }
 
+  &__header {
+    text-transform: uppercase;
+    letter-spacing: 0.05px;
+    font-size: .65rem;
+    line-height: 153%;
+  }
+
   &__left-block {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
