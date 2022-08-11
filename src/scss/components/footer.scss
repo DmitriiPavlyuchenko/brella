@@ -11,14 +11,15 @@
   &__top {
     display: flex;
     border-bottom: 1px solid $white;
-    padding-bottom: 3.55rem;
+    padding-bottom: 3.3rem;
   }
 
   &__logo-wrapper {
-    margin-right: 5.25rem;
+    width: 17.5%;
   }
 
   &__logo {
+
   }
 
   &__menu {
@@ -51,7 +52,7 @@
   }
 
   &__aside {
-    max-width: 17.75rem;
+    max-width: 17rem;
   }
 
   &__aside-title {
@@ -103,7 +104,7 @@
   }
 
   &__socials {
-    padding-top: 1.5rem;
+    padding-top: 1.3rem;
     display: flex;
     align-items: flex-end;
   }
@@ -136,7 +137,6 @@
     display: flex;
     @include text-mini(.7rem, 400, none);
     justify-content: space-between;
-    padding-top: 2.5rem;
   }
 
   &__rights {
@@ -161,6 +161,11 @@
   }
 }
 
+.icon-logo:before {
+  width: 4.9rem;
+  height: 1.4rem;
+}
+
 @media (max-width: $smDesktopWidth) {
   .footer {
     padding: 4rem 0 2rem;
@@ -174,7 +179,7 @@
     }
 
     &__body {
-      padding: 2.5rem 0 3.5rem;
+      padding: 3.7rem 0 4.5rem;
     }
 
     &__bottom {

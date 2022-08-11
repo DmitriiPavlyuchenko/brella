@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     line-height: 131.25%;
-    padding: 6rem 1rem 6rem 0;
+    padding: 6rem 0 6.35rem 0.7rem;
     flex: 1 1 50%;
   }
 
@@ -25,33 +25,41 @@
     z-index: -1;
   }
 
+  &__header {
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    line-height: 153%;
+    font-size: .65rem;
+    display: block;
+  }
+
   &__link {
     display: flex;
     align-items: center;
-    padding-top: 1.45rem;
     font-weight: 700;
+    padding-top: 1.45rem;
   }
 
   &__list {
-    padding-top: .9rem;
     display: flex;
     flex-direction: column;
     color: $text-color-lite;
+    gap: 0.9rem;
+    padding-top: 1rem;
   }
 
   &__item {
-    gap: .9rem;
   }
 
   &__right-block {
-    padding: 6rem 0 6rem 1rem;
+    padding: 6rem 0 6.35rem 5.1rem;
     flex: 0 1 50%;
     color: $white;
     gap: 1.7rem;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
     display: flex;
-    align-items: flex-end;
+    margin-top: 2.3rem
   }
 
   &__right-block:before {
@@ -74,7 +82,7 @@
 }
 
 .icon-arrow-left:after {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   font-size: 1rem;
 }
 

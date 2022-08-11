@@ -1,15 +1,22 @@
 .about-us {
-  padding: 5rem 0 6rem;
+  padding: 6.5rem 0 6rem;
 
   &__container {
     display: flex;
     gap: 3rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   &__text {
     max-width: 24rem;
+    padding-bottom: .8rem;
+    padding-left: .5rem;
+  }
+
+  &__information {
+    align-self: center;
+    margin-top: 5rem;
   }
 
   &__diagram {
@@ -19,7 +26,6 @@
   &__diagram-wrapper {
     display: flex;
     gap: 2.5rem;
-    align-items: center;
   }
 
   &__percents {
@@ -56,14 +62,14 @@
     display: flex;
     margin-top: .5rem;
     justify-content: flex-end;
-    padding-right: 1rem;
+    padding-right: .4rem;
     font-size: .65rem;
     color: $grey;
     line-height: 169%;
   }
 
   &__separator {
-    bottom: .2rem;
+    bottom: .1rem;
   }
 }
 

@@ -32,7 +32,8 @@
     color: $black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 1rem;
+    justify-content: flex-start;
     border-radius: .3rem 0 0 .3rem;
     font-size: .7rem;
     line-height: 143%;

@@ -1,8 +1,7 @@
 .advantages-card {
 
   &__img {
-    align-self: center;
-    flex: 1 0 20%;
+    flex: 1 0 14%;
     max-width: 100%;
   }
 
@@ -16,6 +15,7 @@
     padding-top: .35rem;
     font-size: .7rem;
     line-height: 142%;
+    display: block;
   }
 }
 
