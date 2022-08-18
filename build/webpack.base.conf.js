@@ -1,13 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const copyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const fs = require('fs')
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../dist'),
-  assets: 'assets',
 }
 
 const PAGES_DIR = `${PATHS.src}/pages`
@@ -24,12 +22,16 @@ module.exports = {
     app: PATHS.src
   },
   output: {
-    filename: `${PATHS.assets}/js/[name].[hash].js`,
+    filename: `js/[name].[hash].js`,
     path: PATHS.dist,
     publicPath: "/",
-    assetModuleFilename: "assets/[name][ext]",
-    clean: true
+    clean: true,
+    assetModuleFilename: pathData => {
+      const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
+      return `${filepath}/[name][ext]`;
+    },
   },
+  devtool: 'source-map',
   optimization: {
     splitChunks: {
       cacheGroups: {
@@ -40,6 +42,10 @@ module.exports = {
           enforce: true
         }
       }
+    },
+  },
+  resolve: {
+    alias: {
     }
   },
   module: {
@@ -49,18 +55,22 @@ module.exports = {
       exclude: "/node_modules/"
     },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        type: "asset/resource",
-        // options: {
-        //   name: `[name].[ext]`
-        // }
+        test: /\.html$/i,
+        loader: "html-loader",
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)$/,
+        test: (/\.(png|jpe?g|gif|webp|avif)(\?.*)?$/),
+        type: "asset/resource",
+        generator: {
+          filename: `img/[name].[hash:8][ext]`,
+        }
+      },
+      {
+        test: (/\.(woff2?|eot|ttf|otf)(\?.*)?$/i),
         type: 'asset/resource',
-        // options: {
-        //   name: `[name].[ext]`
-        // }
+        generator: {
+          filename: `fonts/[name].[hash:8][ext]`,
+        }
       },
       {
         test: /\.css$/,
@@ -72,18 +82,19 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {sourceMap: true}
-          }, {
+          },
+          {
             loader: 'postcss-loader',
             options: {
               sourceMap: true,
               postcssOptions: {config: `postcss.config.js`},
             },
-          }, {
+          },
+          {
             loader: 'sass-loader',
             options: {sourceMap: true}
           }
@@ -92,17 +103,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: `${PATHS.assets}/css/[name].[hash].css`,
-    }),
-    new copyPlugin({
-      patterns: [
-        {
-          from: `${PATHS.src}/img/`, to: `${PATHS.assets}/img/`, noErrorOnMissing: true
-        },
-        {
-          from: `${PATHS.src}/fonts/`, to: `${PATHS.assets}/fonts/`, noErrorOnMissing: true
-        },
-      ]
+      filename: `css/[name].[hash].css`,
     }),
     ...PAGES.map(
         page =>
