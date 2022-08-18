@@ -44,9 +44,6 @@ module.exports = {
       }
     },
   },
-  resolve: {
-    alias: {}
-  },
   module: {
     rules: [{
       test: /\.js$/,
