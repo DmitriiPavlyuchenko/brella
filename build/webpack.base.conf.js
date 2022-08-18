@@ -5,7 +5,7 @@ const fs = require('fs')
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
-  dist: path.join(__dirname, '../dist'),
+  docs: path.join(__dirname, '../docs'),
 }
 
 const PAGES_DIR = `${PATHS.src}/pages`
@@ -23,7 +23,7 @@ module.exports = {
   },
   output: {
     filename: `js/[name].[hash].js`,
-    path: PATHS.dist,
+    path: PATHS.docs,
     publicPath: "/",
     clean: true,
     assetModuleFilename: pathData => {
