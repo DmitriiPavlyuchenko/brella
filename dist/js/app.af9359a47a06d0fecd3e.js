@@ -1,0 +1,2 @@
+(()=>{"use strict";var e={BACK:document.querySelector(".slider__back"),NEXT:document.querySelector(".slider__next")};e.BACK.addEventListener("click",(function(){console.log("Kek")})),e.NEXT.addEventListener("click",(function(){console.log("Mem")}))})();
+//# sourceMappingURL=app.af9359a47a06d0fecd3e.js.map
