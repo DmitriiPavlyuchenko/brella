@@ -4,7 +4,7 @@
   .swiper-wrapper {
     align-items: center;
     display: flex;
-    margin: 5.2rem 4rem 0;
+    margin: 5.2rem 4rem 6rem;
     justify-content: center;
     gap: 4rem;
   }
@@ -49,9 +49,31 @@
 
 @media (max-width: $smDesktopWidth) {
   .swiper {
+    .swiper-wrapper {
+      margin: 4rem 4rem 4rem;
+      gap: 3rem;
+    }
+
     .swiper-slide:nth-child(4),
     .swiper-slide:nth-child(5) {
       display: none;
+    }
+  }
+}
+
+@media (max-width: $tableWidth) {
+  .swiper {
+    .swiper-wrapper {
+      margin: 3rem 4rem 3rem;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: $phoneWidth) {
+  .swiper {
+    .swiper-wrapper {
+      margin: 2rem 4rem 2rem;
     }
   }
 }
