@@ -1,19 +1,19 @@
-.slider {
+.swiper {
+  position: relative;
 
-  &__wrapper {
-    position: relative;
+  .swiper-wrapper {
     align-items: center;
     display: flex;
-    padding: 0 4rem;
+    margin: 5.2rem 4rem 0;
     justify-content: center;
     gap: 4rem;
   }
 
-  &__company-logo:hover {
+  .swiper-company-logo:hover {
     @include increase();
   }
 
-  &__pagination {
+  .swiper-pagination {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -23,37 +23,42 @@
     bottom: 50%;
   }
 
-  &__back {
+  .swiper-button-prev {
     left: 0;
   }
 
-  &__back:first-child {
+  .swiper-button-prev:first-child {
     transform: rotate(200grad);
   }
 
-  &__next {
+  .swiper-button-next {
     right: 0;
   }
 }
 
 @media (max-width: $desktopWidth) {
-  .slider {
-
-    &__wrapper {
+  .swiper {
+    .swiper-wrapper {
       gap: 2rem;
       justify-content: space-evenly;
     }
 
-    &__company-logo:nth-child(2n) {
+
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .swiper {
+    .swiper-slide:nth-child(4),
+    .swiper-slide:nth-child(5) {
       display: none;
     }
   }
 }
 
 @media (max-width: $smTableWidth) {
-  .slider {
-
-    &__company-logo:not(:first-child) {
+  .swiper {
+    .swiper-slide:not(:first-child) {
       display: none;
     }
   }

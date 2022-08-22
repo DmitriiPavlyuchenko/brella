@@ -1,4 +1,5 @@
 .nav-menu {
+
   &__list {
     display: flex;
     align-items: center;
@@ -22,6 +23,7 @@
 
 @media (max-width: $desktopWidth) {
   .nav-menu {
+
     &__list {
       gap: 1.5rem;
     }
@@ -30,8 +32,28 @@
 
 @media (max-width: $smDesktopWidth) {
   .nav-menu {
+
     &__list {
+      padding-top: 1rem;
+      background-color: $white;
+      height: 100vh;
+      flex-direction: column;
+      position: absolute;
+      top: 2.5rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      align-items: center;
       display: none;
     }
+
+    &__item {
+      font-size: .9rem;
+    }
   }
+}
+
+.header__nav > .mobile-active {
+  display: flex;
 }

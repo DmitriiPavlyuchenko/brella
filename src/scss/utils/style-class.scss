@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: $smDesktopWidth) {
   .title {
     font-size: 1.4rem;

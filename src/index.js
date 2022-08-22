@@ -1,3 +1,4 @@
 import './scss/style.scss'
-import './js/slider.js'
+import './js/swiper.js'
 import './js/view.js'
+import './js/mobile-menu'

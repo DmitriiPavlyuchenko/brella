@@ -7,7 +7,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devServer: {
     port: 8081,
     client: {overlay: {warnings: false, errors: true}},
-    static: {directory: baseWebpackConfig.externals.path.docs},
+    static: {directory: baseWebpackConfig.externals.path.dist},
   },
   plugins: []
 })
