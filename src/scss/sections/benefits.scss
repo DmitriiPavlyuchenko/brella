@@ -55,6 +55,11 @@
 
     &__card {
       max-width: 13rem;
+      align-items: center;
+    }
+
+    &__text {
+      text-align: center;
     }
   }
 }
