@@ -28,8 +28,9 @@
     }
 
     &__title {
-      white-space: nowrap;
       margin-top: .5rem;
+      flex: 0 1 100%;
+      word-break: break-word;
     }
   }
 
